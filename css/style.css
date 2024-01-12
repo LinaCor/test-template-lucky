@@ -46,6 +46,8 @@ input,
 button,
 textarea {
   font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 input::-ms-clear {
@@ -91,7 +93,7 @@ h6 {
 /*обнулление стилей*/
 
 body {
-  font-family: 'Popins', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   font-weight: normal;
   color: #4A4A4A;
@@ -102,7 +104,7 @@ body {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
-  padding: 30px 150px;
+  padding: 30px 148px;
   overflow: hidden;
 }
 
@@ -163,8 +165,85 @@ body {
 
 .legend {}
 
-.legend__descr {}
+.legend__descr {
+  max-width: 597px;
+  display: flex;
+  flex-direction: column;
+}
+
+.legend__descr h1 {
+  max-width: 474px;
+  margin-bottom: 22px;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65px;
+  color: #2D2D2D;
+}
+
+.legend__descr h1 span,
+.legend__descr-user p span {
+  color: #FF8345;
+}
+
+.legend__descr p {
+  max-width: 444px;
+  margin-bottom: 30px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #7C7C7C;
+}
+
+.legend__descr a {
+  min-height: 46px;
+  max-width: 130px;
+  display: inline-block;
+  margin-bottom: 50px;
+  padding: 0 22px;
+  font-size: 15px;
+  line-height: 46px;
+  border-radius: 30px;
+  background-color: #48B774;
+  color: #FFF;
+}
+
+.legend__descr-search {
+  height: 62px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.legend__descr-search input {
+  height: 100%;
+  width: 100%;
+  padding-left: 38px;
+  border-radius: 100px;
+}
+
+.legend__descr-search button {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: url('../svg/search-icon.svg') 50% 50%/27px 27px no-repeat;
+  background-color: #48B774;
+}
 
 .legend__descr-user {}
 
 .legend__img {}
+
+/*для скринридеров*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
