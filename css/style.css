@@ -1,0 +1,170 @@
+/*обнулление стилей*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-style: 100%;
+  line-height: 1;
+  font-style: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+/*обнулление стилей*/
+
+body {
+  font-family: 'Popins', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  color: #4A4A4A;
+  background-color: #ECF7F3;
+}
+
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 150px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 500;
+  color: #2D2D2D;
+}
+
+.header__logo>p {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  border: 5px solid #F9A779;
+  border-radius: 50%;
+  color: #48B774;
+}
+
+.header__logo>span {
+  color: #2D2D2D;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.header__nav {}
+
+.header__nav-list {
+  display: flex;
+}
+
+.header__nav-item {}
+
+.header__nav-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.header__btn {
+  min-height: 42px;
+  padding: 9px 23px;
+  border-radius: 20px;
+  background-color: #48B774;
+  color: #FFF;
+  font-weight: 500;
+}
+
+.legend {}
+
+.legend__descr {}
+
+.legend__descr-user {}
+
+.legend__img {}
