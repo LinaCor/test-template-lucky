@@ -241,6 +241,7 @@ body {
   padding: 0 22px;
   font-size: 15px;
   line-height: 46px;
+  text-align: center;
   border-radius: 30px;
   background-color: #48B774;
   color: #FFF;
@@ -516,9 +517,10 @@ body {
   }
 
   .legend__descr a {
+    max-width: 200px;
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
-    font-size: 13px;
   }
 
   .legend__descr-user {
