@@ -28,7 +28,7 @@ window.onload = async function () {
 
   let maxLength = response.length;
   const randomHeading = (min, max) => {
-    return Math.round(Math.random() * (max - min) + min);
+    return Math.ceil(Math.random() * (max - min) + min);
   };
 
   descriotionPage.textContent = response[randomHeading(0, maxLength)];
