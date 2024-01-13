@@ -158,11 +158,11 @@ body {
   color: #FB9B69;
 }
 
-.header__nav-item.active {
+.header__nav-item a.active {
   position: relative;
 }
 
-.header__nav-item.active::after {
+.header__nav-item a.active::after {
   content: " ";
   display: block;
   width: 21px;
@@ -251,6 +251,15 @@ body {
   width: 100%;
   padding-left: 38px;
   border-radius: 100px;
+}
+
+.legend__descr-search p {
+  display: none;
+  margin-top: 5px;
+  margin-left: 38px;
+  font-size: 12px;
+  text-decoration: underline;
+  color: red;
 }
 
 .legend__descr-search button {

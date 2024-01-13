@@ -22,7 +22,7 @@
       </div>
       <nav class="header__nav">
         <ul class="header__nav-list">
-          <li class="header__nav-item active"><a href="#">Mobile Top Up</a></li>
+          <li class="header__nav-item"><a href="#" class="active">Mobile Top Up</a></li>
           <li class="header__nav-item"><a href="#">About</a></li>
           <li class="header__nav-item"><a href="#">Rate</a></li>
           <li class="header__nav-item"><a href="#">Help</a></li>
@@ -34,12 +34,14 @@
       <section class="legend">
         <div class="legend__descr">
           <h1>Now Buy Your<br> PIN or <span>Top Up</span><br> With Bank Transfer</h1>
-          <p>We Make international calling simple, relible, and cheap basedon your unique calling behavior.</p>
+          <p></p>
           <a href="#">Get Started</a>
-          <div class="legend__descr-search">
-            <input type="search" name="" id="" placeholder="Where do you want to call?">
-            <button><span class="visually-hidden">search</span></button>
-          </div>
+          <form class="legend__descr-search">
+            <input type="search" name="search" placeholder="Where do you want to call?" minlengt="4" maxlength="12"
+              autocomplete="off">
+            <p>text to error</p>
+            <button type="submit"><span class="visually-hidden">search</span></button>
+          </form>
           <div class="legend__descr-user">
             <div class="legend__descr-photo">
               <img src="img/first-man.png" alt="happy hindu">
@@ -56,6 +58,7 @@
       </section>
     </main>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
