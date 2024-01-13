@@ -518,6 +518,7 @@ body {
   .legend__descr a {
     margin-right: auto;
     margin-left: auto;
+    font-size: 13px;
   }
 
   .legend__descr-user {
