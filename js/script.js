@@ -17,7 +17,7 @@ const validateInput = (valueInput) => {
 };
 
 window.onload = async function () {
-  let response = await fetch('https://baconipsum.com/api/?type=lucky')
+  let response = await fetch('88888')
     .then((response) => {
       if (response.ok) {
         return response.json();
