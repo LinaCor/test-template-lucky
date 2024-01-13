@@ -349,60 +349,64 @@ body {
   position: relative;
 }
 
-.legend__img-container img:first-child {
-  background: radial-gradient(circle, #48B774 50%, #ECF7F3 50%) 25px -30px/85% 85% no-repeat;
+@keyframes circle {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-.img-container__plug {
+.legend__img-container img:first-child {
+  background: radial-gradient(circle, #48B774 50%, rgba(236, 247, 243, 0) 50%) 25px -30px/85% 85% no-repeat;
+}
+
+.legend__flags {
   width: 450px;
   height: 450px;
   top: -50px;
   left: -60px;
+  position: absolute;
   border-radius: 50%;
   border: 2px solid #E8E8E8;
-  position: absolute;
-  z-index: -5;
+  z-index: -3;
 }
 
-.legend__img-container .img-container__flag {
+.legend__flags .flag {
   display: block;
-  width: 85px;
-  height: 85px;
   border: 10px solid #FFF;
   border-radius: 50%;
   position: absolute;
+  transition: 1s;
+  z-index: -2;
 }
 
-.legend__img-container .frst,
-.legend__img-container .fve {
+.legend__flags .frst,
+.legend__flags .scnd,
+.legend__flags .thrd,
+.legend__flags .fur,
+.legend__flags .fve {
   width: 50px;
   height: 50px;
-  top: 202px;
-  left: -75px;
+  top: 200px;
+  left: 200px;
 }
 
-.legend__img-container .scnd {
-  top: 30px;
-  left: -72px;
+.legend__flags .scnd {
+  width: 85px;
+  height: 85px;
 }
 
-.legend__img-container .thrd {
+.legend__flags .thrd {
   width: 60px;
   height: 60px;
-  top: -75px;
-  left: 155px;
 }
 
-.legend__img-container .fur {
+.legend__flags .fur {
   width: 70px;
   height: 70px;
-  top: 40px;
-  left: 330px;
-}
-
-.legend__img-container .fve {
-  top: 202px;
-  left: 360px;
 }
 
 /*для скринридеров*/
@@ -473,9 +477,8 @@ body {
     margin-left: 0;
   }
 
-  .legend__img-container::after {
-    left: 50%;
-
+  .legend__img {
+    transform: scale(0.9);
   }
 }
 
@@ -499,6 +502,10 @@ body {
     transform: none;
   }
 
+  .legend__descr {
+    margin-bottom: 50px;
+  }
+
   .legend__descr h1 {
     font-size: 40px;
     line-height: 52px;
@@ -515,5 +522,9 @@ body {
 
   .legend__descr-user {
     justify-content: center;
+  }
+
+  .legend__img {
+    transform: scale(0.7);
   }
 }
